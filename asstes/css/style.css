@@ -69,10 +69,13 @@ main > section {
 }
 
 main > hr {
+    height: auto;
     width: 85%;
-    margin: auto;
+    
     border: 1px solid #ffffff90;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.200);
+    
+    margin: auto;
 }
 
 main strong {
@@ -84,169 +87,134 @@ main em, abbr {
     text-decoration-color: var(--verde-jade);
 }
 
-main > section#s1 {
+main > section#menu-section {
     position: relative;
+    display: flex;
+    gap: 2.5vw;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+    
+    padding: 40px;
 }
 
-main > section#s1 > h2 {
+main > section#menu-section > h2 {
     position: absolute;
     top: -3.3%;
     left: 2.5%;
+
     font-family: var(--default-title);
     font-size: 3em;
     font-weight: 500;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.200);
 }
 
-main > section#s1 > form {
-    background-color: #fff;
-    border-radius: 24px;
-    display: flex;
-    gap: 2.5vw;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
-}
-
-main > section#s1 > form > div {
+main > section#menu-section > div.menu-box {
     background-color: var(--off-white);
     border-radius: 24px;
     padding: 30px;
 }
 
-main > section#s1 > form > div > h3 {
+main > section#menu-section > div.menu-box > img {
+    height: auto;
+    width: 100%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+}
+
+main > section#menu-section > div.menu-box > h3 {
     font-family: var(--default-title);
     font-size: 1.5em;
-    font-weight: 600;
+
     margin: 15px 0px;
 }
 
-main > section#s1 > form > div > p {
+main > section#menu-section > div.menu-box > p {
     font-family: var(--default-font);
     font-size: 1em;
     line-height: 1.25em;
     text-align: justify;
-    margin-bottom: 25px; 
 }
 
-main > section#s1 > form > div > span {
+main > section#menu-section > div.menu-box > div.price {
     font-family: var(--money-font);
     font-size: 2em;
-    font-weight: 500;
-    display: block;
-    margin: 10px 0px;
-    background-color: var(--bege-suave);
-    width: 100%;
-    padding: 10px;
-    border-radius: 15px;
+    color: white;
     text-align: center;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
-}
-
-main > section#s1 > form > div > div {
-    margin: 20px 0px;
-}
-
-main > section#s1 > form > div > div >  label {
-    font-size: 1.25em;
-}
-
-main > section#s1 > form > div > div > input {
+    
+    
     height: auto;
-    width: 55px;
-    font-size: 1em;
-    padding: 7px;
-    background-color: transparent;
-    border: none;
-    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.200);
-}
-
-main > section#s1 > form > div > div > textarea {
-    display: block;
-    height: 120px;
     width: 100%;
-    border: none;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
-    font-family: var(--default-font);
-    font-size: 1em;
-    line-height: 1.5em;
+    margin: 30px 0px;
     padding: 10px;
-    resize: vertical;
-    overflow: auto;
-    word-wrap: break-word;
-    margin: 5px 0px;
-    border-radius: 0px 15px;
-}
-
-main > section#s1 > form > div > div > input:focus, textarea:focus {
-    outline: none;
-}
-
-main > section#s1 > form > div > button {
-    font-size: 1.5em;
-    font-weight: 600;
-    margin-top: 10px;
-    background-color: var(--dourado);
-    width: 100%;
-    padding: 17px;
-    border: none;
+    
+    background-color: var(--verde-jade);
     border-radius: 15px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 }
 
-main > section#s1 > form > div > button:hover {
-    background-color: #ffee00;
-    cursor: pointer;
-}
-
-main > section#s1 img {
-    height: auto;
-    width: 100%;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
-}
-
-main > section#s2 {
+main > section#section-about {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-main > section#s2 > div#section-text {
-    background-color: #fff;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.500);
-    padding: 24px;
-    max-width: 680px;
-    border-radius: 24px;
-    border: 5px solid var(--dourado);
+main > section.sections h2 {
+    font-family: var(--default-title);
+    font-size: 2em;
+    text-align: left;
+    
+    margin: 10px;
 }
 
-main > section#s2 > div#section-text > h2 {
+main > section.sections p {
+    font-family: var(--default-font);
+    font-size: 1.5em;
+    line-height: 1.25em;
+    text-align: justify;
+
+    margin: 10px;
+}
+
+
+/* main > section#s2 > div#section-text > h2 {
     font-family: var(--default-title);
     font-size: 2em;
     text-align: left;
     padding: 10px;
-}
-
-main > section#s2 > div#section-text > p {
+    } */
+    
+/* main > section#s2 > div#section-text > p {
     font-family: var(--default-font);
     font-size: 1.5em;
     line-height: 1.25em;
     text-align: justify;
     padding: 10px;
-}
-
-main > section#s2 > div#section-image {
+    
+} */
+        
+main > section#section-about> div#image-box {
     background-image: url(../img/background-about-section.png);
     background-repeat: no-repeat;
     background-position: top top;
     background-size: contain;
 }
 
-main > section#s2 > div#section-image > img {
+main > section#section-about > div#image-box > img {
     height: 700px;
     width: auto;
-    filter: drop-shadow(-2px 2px 4px rgba(0, 0, 0, 0.600));
+    filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, 0.500));
+}
+
+main > section#section-about > div#text-box {
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.500);
+    padding: 24px;
+    max-width: 680px;
+    border-radius: 24px;
+    border: 5px solid var(--dourado);
 }
 
 main > section#s3 {
@@ -265,21 +233,21 @@ main > section#s3 > div#contact {
     border: 5px solid var(--dourado);
 }
 
-main > section#s3 > div#contact > h2 {
+/* main > section#s3 > div#contact > h2 {
     font-family: var(--default-title);
     font-size: 2em;
     font-weight: 600;
     text-align: center;
     padding-top: 20px;
-}
+} */
 
-main > section#s3 > div#contact > p {
+/* main > section#s3 > div#contact > p {
     font-family: var(--default-font);
     font-size: 1.5em;
     line-height: 1.25em;
     text-align: justify;
     padding: 20px 0px;
-}
+} */
 
 main > section#s3 > div#contact > ul > li {
     list-style-type: none;
