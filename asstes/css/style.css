@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     /* Paleta de cores */
@@ -25,37 +24,40 @@
 }
 
 header {
-    background-color: var(--vermelho);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.600);
-    padding: 80px;
     display: flex;
     gap: 24px;
     align-items: center;
     justify-content: center;
+
+    background-color: var(--vermelho);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.600);
+    
+    padding: 80px;
 }
 
-header > div#header-image > img {
-    height: 100px;
-    color: #fff;
+header > div#logo-box > img {
+    height: 200px;
+    width: auto;
 }
 
-header > div#header-text > h1 {
+header > div#title-box > h1 {
     font-family: var(--main-title);
     font-variant: small-caps;
     font-size: 4em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.600);
     color: var(--bege-suave);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.600);
 }
 
-header > div#header-text > p {
+header > div#title-box > p {
     font-family: var(--main-title);
     font-size: 2em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.600);
     color: var(--bege-suave);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.600);
 }
 
 html, body {
     font-family: var(--default-font);
+
     background-color: #EBEBE3;
     background-image: url(../img/background-body.avif);
     background-repeat: no-repeat;
@@ -65,7 +67,41 @@ html, body {
 }
 
 main > section {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+
     margin: 150px;
+}
+
+main > section.sections > div.default-box {
+    background-color: #fff;
+    
+    height: auto;
+    max-width: 680px;
+    
+    border: 5px solid var(--dourado);
+    border-radius: 24px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.500);
+    
+    padding: 24px;
+}
+
+main > section.sections h2 {
+    font-family: var(--default-title);
+    font-size: 2em;
+    text-align: left;
+    
+    margin: 10px;
+}
+
+main > section.sections p {
+    font-family: var(--default-font);
+    font-size: 1.5em;
+    line-height: 1.25em;
+    text-align: justify;
+
+    margin: 10px;
 }
 
 main > hr {
@@ -85,14 +121,16 @@ main strong {
 main em, abbr {
     text-decoration: underline;
     text-decoration-color: var(--verde-jade);
+    font-style: normal;
+    font-weight: 450;
 }
 
 main > section#menu-section {
     position: relative;
-    display: flex;
+    /*display: flex;
     gap: 2.5vw;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
 
     background-color: #fff;
     border-radius: 24px;
@@ -103,8 +141,8 @@ main > section#menu-section {
 
 main > section#menu-section > h2 {
     position: absolute;
-    top: -3.3%;
-    left: 2.5%;
+    top: -4.9vh;
+    left: 2.5vw;
 
     font-family: var(--default-title);
     font-size: 3em;
@@ -155,28 +193,11 @@ main > section#menu-section > div.menu-box > div.price {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 }
 
-main > section#section-about {
+/*main > section#section-about {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-main > section.sections h2 {
-    font-family: var(--default-title);
-    font-size: 2em;
-    text-align: left;
-    
-    margin: 10px;
-}
-
-main > section.sections p {
-    font-family: var(--default-font);
-    font-size: 1.5em;
-    line-height: 1.25em;
-    text-align: justify;
-
-    margin: 10px;
-}
+}*/
 
 
 /* main > section#s2 > div#section-text > h2 {
@@ -195,7 +216,7 @@ main > section.sections p {
     
 } */
         
-main > section#section-about> div#image-box {
+main > section#section-about > div#image-box {
     background-image: url(../img/background-about-section.png);
     background-repeat: no-repeat;
     background-position: top top;
@@ -208,21 +229,23 @@ main > section#section-about > div#image-box > img {
     filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, 0.500));
 }
 
-main > section#section-about > div#text-box {
+/*main > section#section-about > div#text-box {
     background-color: #fff;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.500);
     padding: 24px;
     max-width: 680px;
     border-radius: 24px;
     border: 5px solid var(--dourado);
-}
+}*/
 
-main > section#s3 {
+/*main > section#s3 {
     display: flex;
     gap: 10vw;
     justify-content: center;
     align-items: first baseline;
-}
+}*/
+
+/* PAREI AQUI!!! */
 
 main > section#s3 > div#contact {
     background-color: #fff;
