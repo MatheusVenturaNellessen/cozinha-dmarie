@@ -32,7 +32,7 @@ header {
     background-color: var(--vermelho);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.600);
     
-    padding: 80px;
+    padding: 50px;
 }
 
 header > div#logo-box > img {
@@ -182,7 +182,7 @@ main > section#section-menu > div.menu-box > p {
 main > section#section-menu > div.menu-box > div.price-box {
     font-family: var(--money-font);
     font-size: 2em;
-    color: white;
+    color: #fff;
     text-align: center;
     
     
@@ -281,7 +281,7 @@ main > section#section-informations > div#localitation-box > iframe {
     height: 400px;
     width: 500px;
 
-    border: 10px solid var(--verde-jade); /* Not working */
+    border: 3px solid var(--verde-jade); /* Not working */
     border-radius: 15px;
 }
 
@@ -297,10 +297,16 @@ footer {
     padding: 50px;
 }
 
+footer > div {
+    height: auto;
+    width: 100%;
+}
+
 footer > div > h2 {
     font-family: var(--default-title);
     font-size: 2em;
-    font-weight: 600;
+    font-weight: 550;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.100);
 
     margin: 20px 0px;
 }
@@ -309,26 +315,21 @@ footer > div > ul > li {
     list-style-type: none;
 
     font-size: 1.2em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.100);
 
     margin: 20px 0px;
 }
 
+footer > div > ul > li > em {
+    font-weight: 500;
+    font-style: normal;
+}
+
 footer > div > ul > li > a {
-    text-decoration: none;
-    color: #000;
-}
-
-footer > div > ul > li > a:hover {
-    text-decoration: underline;
-    color: blue;
-}
-
-footer > div > ul > li > a:hover::after {
-    content: "\1F517";
+    color: #0000EE;
 }
 
 footer > hr {
     height: 60vh;
     border: 1px solid #ffffff40;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.100);
 }
