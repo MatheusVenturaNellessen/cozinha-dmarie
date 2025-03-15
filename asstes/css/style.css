@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    /* Paleta de cores */
+    /* Color palette */
     --vermelho: #D72638;
     --dourado: #FFD700;
     --bege-suave: #F5E1C7;
     --verde-jade: #1A936F;
     --off-white: #ECEBE9;
 
-    /* Fontes */
+    /* Fonts */
     --main-title: "Cormorant Garamond", serif;
     --default-title: "Urbanist", sans-serif;
     --default-font: "Roboto", sans-serif;
@@ -70,6 +70,7 @@ main > section {
     display: flex;
     gap: 60px;
     justify-content: center;
+    align-items: flex-start;
 
     margin: 150px;
 }
@@ -82,29 +83,38 @@ main > section.sections > div.default-box {
     
     border: 5px solid var(--dourado);
     border-radius: 24px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.500);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.400);
     
-    padding: 24px;
+    padding: 35px;
 }
 
 main > section.sections h2 {
     font-family: var(--default-title);
     font-size: 2em;
-    text-align: left;
+    font-weight: 600;
+    text-align: center;
     
-    margin: 10px;
+    margin: 10px 0px;
+}
+
+main h3 {
+    font-family: var(--default-title);
+    font-size: 1.5em;
+    font-weight: 600;
+
+    margin: 25px 0px;
 }
 
 main > section.sections p {
     font-family: var(--default-font);
     font-size: 1.5em;
-    line-height: 1.25em;
+    line-height: 1.5em;
     text-align: justify;
 
-    margin: 10px;
+    margin: 20px 0px;
 }
 
-main > hr {
+main hr {
     height: auto;
     width: 85%;
     
@@ -125,12 +135,8 @@ main em, abbr {
     font-weight: 450;
 }
 
-main > section#menu-section {
+main > section#section-menu {
     position: relative;
-    /*display: flex;
-    gap: 2.5vw;
-    justify-content: center;
-    align-items: center;*/
 
     background-color: #fff;
     border-radius: 24px;
@@ -139,7 +145,7 @@ main > section#menu-section {
     padding: 40px;
 }
 
-main > section#menu-section > h2 {
+main > section#section-menu > h2 {
     position: absolute;
     top: -4.9vh;
     left: 2.5vw;
@@ -147,36 +153,33 @@ main > section#menu-section > h2 {
     font-family: var(--default-title);
     font-size: 3em;
     font-weight: 500;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.200);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 }
 
-main > section#menu-section > div.menu-box {
+main > section#section-menu > div.menu-box {
     background-color: var(--off-white);
     border-radius: 24px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+
     padding: 30px;
 }
 
-main > section#menu-section > div.menu-box > img {
+main > section#section-menu > div.menu-box > img {
     height: auto;
     width: 100%;
+
+    border-radius: 15px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 }
 
-main > section#menu-section > div.menu-box > h3 {
-    font-family: var(--default-title);
-    font-size: 1.5em;
-
-    margin: 15px 0px;
-}
-
-main > section#menu-section > div.menu-box > p {
+main > section#section-menu > div.menu-box > p {
     font-family: var(--default-font);
     font-size: 1em;
     line-height: 1.25em;
     text-align: justify;
 }
 
-main > section#menu-section > div.menu-box > div.price {
+main > section#section-menu > div.menu-box > div.price-box {
     font-family: var(--money-font);
     font-size: 2em;
     color: white;
@@ -192,215 +195,140 @@ main > section#menu-section > div.menu-box > div.price {
     border-radius: 15px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 }
-
-/*main > section#section-about {
-    display: flex;
+            
+main > section#section-about{
     align-items: center;
-    justify-content: center;
-}*/
+}
 
-
-/* main > section#s2 > div#section-text > h2 {
-    font-family: var(--default-title);
-    font-size: 2em;
-    text-align: left;
-    padding: 10px;
-    } */
-    
-/* main > section#s2 > div#section-text > p {
-    font-family: var(--default-font);
-    font-size: 1.5em;
-    line-height: 1.25em;
-    text-align: justify;
-    padding: 10px;
-    
-} */
-        
-main > section#section-about > div#image-box {
+main > section#section-about > div#about-image-box {
     background-image: url(../img/background-about-section.png);
     background-repeat: no-repeat;
     background-position: top top;
     background-size: contain;
 }
 
-main > section#section-about > div#image-box > img {
+main > section#section-about > div#about-image-box > img {
     height: 700px;
     width: auto;
+    
     filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, 0.500));
 }
 
-/*main > section#section-about > div#text-box {
-    background-color: #fff;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.500);
-    padding: 24px;
-    max-width: 680px;
-    border-radius: 24px;
-    border: 5px solid var(--dourado);
-}*/
-
-/*main > section#s3 {
-    display: flex;
-    gap: 10vw;
-    justify-content: center;
-    align-items: first baseline;
-}*/
-
-/* PAREI AQUI!!! */
-
-main > section#s3 > div#contact {
-    background-color: #fff;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.500);
-    border-radius: 15px;
-    width: 500px;
-    padding: 10px 20px;
-    border: 5px solid var(--dourado);
-}
-
-/* main > section#s3 > div#contact > h2 {
-    font-family: var(--default-title);
-    font-size: 2em;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 20px;
-} */
-
-/* main > section#s3 > div#contact > p {
-    font-family: var(--default-font);
-    font-size: 1.5em;
-    line-height: 1.25em;
-    text-align: justify;
-    padding: 20px 0px;
-} */
-
-main > section#s3 > div#contact > ul > li {
+main > section#section-informations > div#contact-box > ul > li {
     list-style-type: none;
     font-size: 1.5em;
+
+    margin: 20px 0px;
 }
 
-main > section#s3 > div#contact > ul > li#phone:hover::after {
-    content: ": (43) 3321-9398";
+main > section#section-informations > div#contact-box > ul > li#phone:hover::after {
+    content: ": (88) 88888-8888";
 }
 
-main > section#s3 > div#contact > ul > li#email:hover::after {
+main > section#section-informations > div#contact-box > ul > li#email:hover::after {
     content: ": email@email.com";
 }
 
-main > section#s3 > div#contact > h3 {
-    font-family: var(--default-title);
-    font-size: 1.6em;
-    font-weight: 600;
-    margin-top: 20px;
-}
-
-main > section#s3 > div#contact > ul > li > a {
+main > section#section-informations > div#contact-box > ul > li > a {
     color: #000;
     text-decoration: none;
 }
 
-main > section#s3 > div#contact > ul > li {
-    /* text-align: center; */
-    margin: 20px;
-}
-
-main > section#s3 > div#contact > ul > li > a > img {
+main > section#section-informations > div#contact-box > ul > li > a > img {
     height: 60px;
     width: auto;
+
     align-items: center;
 }
 
-main > section#s3 > div#contact > ul > li#instagram > a > img:hover {
+main > section#section-informations > div#contact-box > ul > li#instagram-logo > a > img:hover {
     background-image: linear-gradient(145deg, #F58529, #FEDA77, #DD2A7B, #8134AF , #515BD4);
     border-radius: 10px;
 }
 
-main > section#s3 > div#contact > ul > li#instagram > a:hover::after {
+main > section#section-informations > div#contact-box > ul > li#instagram-logo > a:hover::after {
     content: "\AInstagram";
     white-space: pre;
     font-size: 0.8em;
+    font-weight: 450;
 }
 
-main > section#s3 > div#contact > ul > li#facebook > a > img:hover {
+main > section#section-informations > div#contact-box > ul > li#facebook-logo > a > img:hover {
     background-color: #1877F2;
     border-radius: 50%;
 }
 
-main > section#s3 > div#contact > ul > li#facebook > a:hover::after {
+main > section#section-informations > div#contact-box > ul > li#facebook-logo > a:hover::after {
     content: "\A Facebook";
     white-space: pre;
     font-size: 0.8em;
+    font-weight: 450;
 }
 
-main > section#s3 > div#contact > ul > li#tiktok > a > img:hover {
+main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a > img:hover {
     background: radial-gradient(circle, #fff 30%, #000);
     border-radius: 15px;
 }
 
-main > section#s3 > div#contact > ul > li#tiktok > a:hover::after {
+main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a:hover::after {
     content: "\ATikTok";
     white-space: pre;
     font-size: 0.8em;
+    font-weight: 450;
 }
 
-main > section#s3 > div#localitation {
-    background-color: #fff;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.500);
-    border-radius: 15px;
-    max-width: 500px;
-    padding: 10px 20px;
-    border: 5px solid var(--dourado);
-}
-
-main > section#s3 > div#localitation > h2 {
-    font-family: var(--default-title);
-    font-size: 2em;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 20px;
-}
-
-main > section#s3 > div#localitation > p {
-    font-family: var(--default-font);
-    font-size: 1.5em;
-    line-height: 1.25em;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.200);
-    text-align: justify;
-    padding: 20px 0px;
-}
-
-main > section#s3 > div#localitation > iframe {
-    display: block;
+main > section#section-informations > div#localitation-box > iframe {
     height: 400px;
-    width: 90%;
-    border: 3px solid var(--verde-jade);
-    border-radius: 10px;
-    margin: auto;
+    width: 500px;
+
+    border: 10px solid var(--verde-jade); /* Not working */
+    border-radius: 15px;
 }
 
 footer {
-    background-color: var(--dourado);
-    box-shadow: 0px -1px 1px rgba(0, 0, 0, 0.600);
     display: flex;
+    gap: 70px;
     justify-content: center;
-    align-items: center;
-    gap: 10vw;
+    align-items: flex-start;
+
+    background-color: var(--dourado);
+    box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.300);
+    
     padding: 50px;
 }
 
-footer > div > h3 {
+footer > div > h2 {
     font-family: var(--default-title);
     font-size: 2em;
-    margin-bottom: 20px;
+    font-weight: 600;
+
+    margin: 20px 0px;
 }
 
 footer > div > ul > li {
-    font-family: var(--default-font);
-    font-size: 1.5em;
     list-style-type: none;
-    margin: 10px 0px;
+
+    font-size: 1.2em;
+
+    margin: 20px 0px;
+}
+
+footer > div > ul > li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer > div > ul > li > a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+footer > div > ul > li > a:hover::after {
+    content: "\1F517";
 }
 
 footer > hr {
-    height: 200px;
-    border: 1px solid #ffffff90;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.200);
+    height: 60vh;
+    border: 1px solid #ffffff40;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.100);
 }
