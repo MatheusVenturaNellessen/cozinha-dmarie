@@ -372,6 +372,8 @@ footer > hr {
     }
 
     main > section.sections > div.default-box {
+        min-width: auto;
+        
         padding: 3vh 5vw;
         margin: auto;
     }
