@@ -59,11 +59,12 @@ html, body {
     font-family: var(--default-font);
 
     background-color: #EBEBE3;
-    background-image: url(../img/background-body.avif);
+    background-image: url(../img/body-background.avif);
     background-repeat: no-repeat;
     background-position: right top;
     background-size: contain;
     background-attachment: fixed;
+
 }
 
 main > section {
@@ -79,7 +80,8 @@ main > section.sections > div.default-box {
     background-color: #fff;
     
     height: auto;
-    max-width: 680px;
+    min-width: 400px;
+    max-width: 600px;
     
     border: 5px solid var(--dourado);
     border-radius: 24px;
@@ -142,17 +144,21 @@ main > section#section-menu {
     border-radius: 24px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
     
+    height: auto;
+    max-width: 800px;
+
+    margin: 150px auto;
     padding: 40px;
 }
 
 main > section#section-menu > h2 {
     position: absolute;
-    top: -4.9vh;
-    left: 2.5vw;
+    top: -5.5%;
+    left: 4%;
 
     font-family: var(--default-title);
     font-size: 3em;
-    font-weight: 500;
+    font-weight: 200;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 }
 
@@ -160,6 +166,9 @@ main > section#section-menu > div.menu-box {
     background-color: var(--off-white);
     border-radius: 24px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+
+    height: auto;
+    max-width: 600px;
 
     padding: 30px;
 }
@@ -212,6 +221,10 @@ main > section#section-about > div#about-image-box > img {
     width: auto;
     
     filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, 0.500));
+}
+
+main > section#section-about > div#about-description-box > img {
+    display: none;
 }
 
 main > section#section-informations > div#contact-box > ul > li {
@@ -278,8 +291,8 @@ main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a:
 }
 
 main > section#section-informations > div#localitation-box > iframe {
-    height: 400px;
-    width: 500px;
+    height: auto*2;
+    width: 100%;
 
     border: 3px solid var(--verde-jade); /* Not working */
     border-radius: 15px;
@@ -334,19 +347,19 @@ footer > hr {
     border: 1px solid #ffffff40;
 }
 
-/* Responsividade para celulares */
-@media (max-width: 768px) {
+/* Responsiveness for smaller devices */
+@media (max-width: 991px) {
     header {
-        padding: 2%;
+        padding: 5%;
     }
 
     header > div#logo-box > img {
-        height: 12vh;
+        height: 15vh;
         width: auto;
     }
         
     header > div#title-box > h1 {
-        font-size: 7vw;
+        font-size: 8vw;
     }
     
     header > div#title-box > p {
@@ -355,58 +368,179 @@ footer > hr {
 
     main > section {
         display: block;
-
         margin: 10vh 5vw;
     }
 
     main > section.sections > div.default-box {
         padding: 3vh 5vw;
+        margin: auto;
     }
         
     main > section.sections h2 {
         font-size: 6vw;
         
-        margin: 0 0;
+        margin: 2vh 0vw;
     }
 
     main h3 {
-        font-size: 4.5vw;
+        font-size: 5vw;
 
-        margin: 2vh 0;
+        margin: 2vh 0vw;
     }
 
     main > section.sections p {
         font-size: 4vw;
 
-        margin: 2vh 0;
+        margin: 2vh 0vw;
     }
 
     
     main > section#section-menu {
-        padding: 0% 5%;
-    }
-
-    main > section#section-menu > h2 {
-        top: -4.2vh;
-        left: 4vw;
-
-        font-size: 8vw;
-    }
-
-    main > section#section-menu > div.menu-box {
-        margin: 5vh 0vw;
+        max-width: 600px;
+        
+        margin: 5%;
+        margin-top: 10%;
         padding: 5%;
     }
 
+    main > section#section-menu > h2 {
+        top: -2.6%;
+        left: 5%;
+
+        font-size: 8vw;
+        font-weight: 200;
+    }
+
+    main > section#section-menu > div.menu-box {
+        min-width: none;
+        padding: 4%;
+    }
+
+    main > section#section-menu > div#menu-box-custom {
+        margin-top: 8%;
+    }
+
     main > section#section-menu > div.menu-box > p {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     main > section#section-menu > div.menu-box > div.price-box {
         font-size: 6vw;
 
         margin: 4vh 0vw;
-        padding: 10px;
+        padding: 2%;
     }
-         
+
+    main > section#section-about {
+        margin: 15% 5%;
+    }
+
+    main > section#section-about > div#about-image-box {
+        display: none;
+    }
+
+    main > section#section-about > div#about-description-box {
+        text-align: center;
+    }
+
+    main > section#section-about > div#about-description-box > img {
+        display: block;
+        
+        max-height: auto;
+        max-width: 100%;
+
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+
+        margin: 1vh 0vw;
+    }
+    
+    main > section#section-informations {
+        margin: 5%;
+        margin-bottom: 15%;
+    }
+
+    main > section#section-informations > div.informations-box {
+        margin-top: 5vh;
+    }
+
+    main > section#section-informations > div#contact-box > ul > li {
+        list-style-type: none;
+
+        font-size: 4.5vw;
+
+        margin: 2vh 0vw;
+    }
+
+    main > section#section-informations > div#contact-box > h3 {
+        font-size: 4.5vw;
+        margin: 3vh 0vw;
+    }
+
+    main > section#section-informations > div#contact-box > ul > li#phone:active::after {
+        content: ": (88) 88888-8888";
+    }
+
+    main > section#section-informations > div#contact-box > ul > li#email:active::after {
+        content: ": email@email.com";
+    }
+
+    main > section#section-informations > div#contact-box > ul > li#instagram-logo > a > img {
+        background-image: linear-gradient(145deg, #F58529, #FEDA77, #DD2A7B, #8134AF , #515BD4);
+        border-radius: 10px;
+    }
+
+    main > section#section-informations > div#contact-box > ul > li#instagram-logo > a::after {
+        content: "\A \00A0 Instagram";
+        font-size: 4vw;
+        font-weight: 450;
+    }
+
+    main > section#section-informations > div#contact-box > ul > li#facebook-logo > a > img {
+        background-color: #1877F2;
+        border-radius: 50%;
+    }
+
+    main > section#section-informations > div#contact-box > ul > li#facebook-logo > a::after {
+        content: "\A \00A0 Facebook";
+        font-size: 4vw;
+        font-weight: 450;
+    }
+
+    main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a > img {
+        background: radial-gradient(circle, #fff 30%, #000);
+        border-radius: 15px;
+    }
+
+    main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a::after {
+        content: "\A \00A0 TikTok";
+        font-size: 4vw;
+        font-weight: 450;
+    }
+
+    main > section#section-informations > div#localitation-box > iframe {
+        max-height: auto;
+        max-width: 100%;
+    }
+    
+    footer {
+        gap: 2.5%;
+        padding: 2.5vh 5vw;
+    }
+    
+    footer > div > h2 {
+        font-size: 4vw;
+
+        margin: 2vh 0vw;
+    }
+    
+    footer > div > ul > li {
+        font-size: 3vw;
+
+        margin: 2vh 0vw;
+    }
+
+    footer > hr {
+        max-height: 55vh;
+    }
 }
