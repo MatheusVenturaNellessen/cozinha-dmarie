@@ -489,15 +489,17 @@ footer > hr {
         content: ": email@email.com";
     }
 
+    main > section#section-informations > div#contact-box > ul#social-media-lu {
+        display: inline-flex;
+        gap: 50px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
     main > section#section-informations > div#contact-box > ul > li#instagram-logo > a > img {
         background-image: linear-gradient(145deg, #F58529, #FEDA77, #DD2A7B, #8134AF , #515BD4);
         border-radius: 10px;
-    }
-
-    main > section#section-informations > div#contact-box > ul > li#instagram-logo > a::after {
-        content: "\A \00A0 Instagram";
-        font-size: 4vw;
-        font-weight: 450;
     }
 
     main > section#section-informations > div#contact-box > ul > li#facebook-logo > a > img {
@@ -505,21 +507,21 @@ footer > hr {
         border-radius: 50%;
     }
 
-    main > section#section-informations > div#contact-box > ul > li#facebook-logo > a::after {
-        content: "\A \00A0 Facebook";
-        font-size: 4vw;
-        font-weight: 450;
-    }
-
     main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a > img {
         background: radial-gradient(circle, #fff 30%, #000);
         border-radius: 15px;
     }
 
-    main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a::after {
-        content: "\A \00A0 TikTok";
-        font-size: 4vw;
-        font-weight: 450;
+    main > section#section-informations > div#contact-box > ul > li#instagram-logo > a:hover::after {
+        content: none;
+    }
+
+    main > section#section-informations > div#contact-box > ul > li#facebook-logo > a:hover::after {
+        content: none;
+    }
+
+    main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a:hover::after {
+        content: none;
     }
 
     main > section#section-informations > div#localitation-box > iframe {
@@ -528,7 +530,7 @@ footer > hr {
     }
     
     footer {
-        gap: 2.5%;
+        gap: 3%;
         padding: 2.5vh 5vw;
     }
     
@@ -545,6 +547,7 @@ footer > hr {
     }
 
     footer > hr {
-        max-height: 55vh;
+        max-height: 85%;
+        margin: auto;
     }
 }
