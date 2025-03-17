@@ -372,12 +372,14 @@ footer > hr {
     }
 
     main > section.sections > div.default-box {
-        min-width: 0;
+        min-width: 0px;
+        max-width: 100%;
+        width: 100%;
         
         padding: 3vh 5vw;
         margin: auto;
     }
-        
+
     main > section.sections h2 {
         font-size: 6vw;
         
