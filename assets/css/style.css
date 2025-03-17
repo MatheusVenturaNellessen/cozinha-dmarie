@@ -45,14 +45,14 @@ header > div#title-box > h1 {
     font-variant: small-caps;
     font-size: 4em;
     color: var(--bege-suave);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.600);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.600);
 }
 
 header > div#title-box > p {
     font-family: var(--main-title);
     font-size: 2em;
     color: var(--bege-suave);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.600);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.600);
 }
 
 html, body {
@@ -210,7 +210,7 @@ main > section#section-about{
 }
 
 main > section#section-about > div#about-image-box {
-    background-image: url(../img/background-about-section.png);
+    background-image: url(../img/section-about-background.png);
     background-repeat: no-repeat;
     background-position: top top;
     background-size: contain;
@@ -220,7 +220,7 @@ main > section#section-about > div#about-image-box > img {
     height: 700px;
     width: auto;
     
-    filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, 0.500));
+    filter: drop-shadow(-2px 2px 2px rgba(0, 0, 0, 0.600));
 }
 
 main > section#section-about > div#about-description-box > img {
@@ -306,44 +306,51 @@ footer {
 
     background-color: var(--dourado);
     box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.300);
-    
-    padding: 50px;
 }
 
-footer > div {
+footer > section#footer-section-flex {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer > section > div {
     height: auto;
-    width: 100%;
+    width: auto;
 }
 
-footer > div > h2 {
+footer > section > div > h2 {
     font-family: var(--default-title);
-    font-size: 2em;
-    font-weight: 550;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.100);
-
+    font-size: 1.5em;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+    
     margin: 20px 0px;
 }
 
-footer > div > ul > li {
+footer > section > div > ul > li {
     list-style-type: none;
 
-    font-size: 1.2em;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.100);
+    font-size: 1.25em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 
-    margin: 20px 0px;
+    margin: 15px 0px;
 }
 
-footer > div > ul > li > em {
-    font-weight: 500;
+footer > section > div > ul > li > em {
     font-style: normal;
+    font-weight: 500;
 }
 
 footer > div > ul > li > a {
     color: #0000EE;
 }
 
-footer > hr {
-    height: 60vh;
+footer hr {
+    height: 40vh;
+    margin-top: auto;
+    margin-bottom: auto;
     border: 1px solid #ffffff40;
 }
 
@@ -354,12 +361,12 @@ footer > hr {
     }
 
     header > div#logo-box > img {
-        height: 15vh;
+        height: 12vh;
         width: auto;
     }
         
     header > div#title-box > h1 {
-        font-size: 8vw;
+        font-size: 7vw;
     }
     
     header > div#title-box > p {
@@ -378,22 +385,24 @@ footer > hr {
         
         padding: 3vh 5vw;
         margin: auto;
+
+        border: 2px solid var(--dourado);
     }
 
     main > section.sections h2 {
-        font-size: 6vw;
+        font-size: 7vw;
         
         margin: 2vh 0vw;
     }
 
     main h3 {
-        font-size: 5vw;
+        font-size: 6vw;
 
         margin: 2vh 0vw;
     }
 
     main > section.sections p {
-        font-size: 4vw;
+        font-size: 5vw;
 
         margin: 2vh 0vw;
     }
@@ -456,7 +465,7 @@ footer > hr {
         border-radius: 15px;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 
-        margin: 1vh 0vw;
+        margin: 1vh auto;
     }
     
     main > section#section-informations {
@@ -491,10 +500,9 @@ footer > hr {
 
     main > section#section-informations > div#contact-box > ul#social-media-lu {
         display: inline-flex;
-        gap: 50px;
+        gap: 10%;
         width: 100%;
         justify-content: center;
-        align-items: center;
     }
 
     main > section#section-informations > div#contact-box > ul > li#instagram-logo > a > img {
@@ -530,24 +538,47 @@ footer > hr {
     }
     
     footer {
-        gap: 3%;
-        padding: 2.5vh 5vw;
+        display: block;
     }
-    
-    footer > div > h2 {
+
+    footer > section#footer-section-flex {
+        display: flex;
+        gap: 5%;
+        justify-items: center;
+
+        padding: 5%;
+    }
+
+    footer > section#footer-section-block > div > ul > li {
+        display: inline;
+        
+        font-size: 2.5vw;
+
+        padding: 0 1%;
+    }
+
+    footer > section > div > h2 {
         font-size: 4vw;
 
         margin: 2vh 0vw;
     }
+
+    footer > section > div > h2#h2-for-large-device {
+        display: none;
+    }
     
-    footer > div > ul > li {
+    footer > section  div > ul > li {
         font-size: 3vw;
 
         margin: 2vh 0vw;
     }
 
-    footer > hr {
-        max-height: 85%;
+    footer hr {
+        max-height: auto;
         margin: auto;
+    }
+
+    footer hr#hr-for-large-device {
+        display: none;
     }
 }
