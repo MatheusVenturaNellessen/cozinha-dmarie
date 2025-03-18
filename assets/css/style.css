@@ -538,7 +538,7 @@ footer hr {
         gap: 13vw;
         width: 100%;
         justify-content: center;
-        margin-bottom: 6vh;
+        margin-bottom: 2vh;
     }
 
     main > section#section-informations > div#contact-box > ul#social-media-ul > li > a > img {
@@ -592,7 +592,15 @@ footer hr {
         transform: translate(-50%, 0);
     }
 
-    main > section#section-informations > div#localitation-box > iframe {
+    main > section#section-informations > div#localitation-box > fieldset {
+        border: 1px solid var(--verde-jade);
+    }
+
+    main > section#section-informations > div#localitation-box > fieldset > legend {
+        font-size: 3vw;
+    }
+
+    main > section#section-informations > div#localitation-box > fieldset > iframe {
         max-height: 50vh;
         max-width: auto;
     }
@@ -612,7 +620,7 @@ footer hr {
     }
 
     footer > section#footer-section-block > div > ul > li {
-        font-size: 2.6vw;
+        font-size: 2.8vw;
 
         text-align: center;
 
