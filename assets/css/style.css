@@ -153,7 +153,7 @@ main > section#section-menu {
 
 main > section#section-menu > h2 {
     position: absolute;
-    top: -5.5%;
+    top: -35px;
     left: 4%;
 
     font-family: var(--default-title);
@@ -243,7 +243,7 @@ main > section#section-informations > div#contact-box > ul > li > a {
     text-decoration: none;
 }
 
-main > section#section-informations > div#contact-box > ul > li > a > img {
+main > section#section-informations > div#contact-box > ul#social-media-ul > li > a > img {
     height: 5vw;
     max-height: 80px;
     width: auto;
@@ -256,16 +256,16 @@ main > section#section-informations > div#contact-box > ul#social-media-ul {
     justify-content: center;
 }
 
-main > section#section-informations > div#contact-box > ul > li#instagram-logo > a > img:hover {
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#instagram-logo > a > img:hover {
     background-image: linear-gradient(145deg, #F58529, #FEDA77, #DD2A7B, #8134AF , #515BD4);
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
-main > section#section-informations > div#contact-box > ul > li#instagram-logo {
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#instagram-logo {
     position: relative;
 }
 
-main > section#section-informations > div#contact-box > ul > li#instagram-logo > a:hover::after {
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#instagram-logo > a:hover::after {
     content: "Instagram";
     font-size: 1em;
 
@@ -275,16 +275,16 @@ main > section#section-informations > div#contact-box > ul > li#instagram-logo >
     transform: translate(-50%, 0);
 }
 
-main > section#section-informations > div#contact-box > ul > li#facebook-logo > a > img:hover {
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#facebook-logo > a > img:hover {
     background-color: #1877F2;
-    border-radius: 50%;
+    border-radius: 6px;
 }
 
-main > section#section-informations > div#contact-box > ul > li#facebook-logo {
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#facebook-logo {
     position: relative;
 }
 
-main > section#section-informations > div#contact-box > ul > li#facebook-logo > a:hover::after {
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#facebook-logo > a:hover::after {
     content: "Facebook";
     font-size: 1em;
 
@@ -294,16 +294,16 @@ main > section#section-informations > div#contact-box > ul > li#facebook-logo > 
     transform: translate(-50%, 0);
 }
 
-main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a > img:hover {
-    background: radial-gradient(circle, #fff 30%, #000);
-    border-radius: 15px;
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#tiktok-logo > a > img:hover {
+    background: radial-gradient(circle, #fff 20%, #000);
+    border-radius: 25%;
 }
 
-main > section#section-informations > div#contact-box > ul > li#tiktok-logo {
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#tiktok-logo {
     position: relative;
 }
 
-main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a:hover::after {
+main > section#section-informations > div#contact-box > ul#social-media-ul > li#tiktok-logo > a:hover::after {
     content: "TikTok";
     font-size: 1em;
 
@@ -392,7 +392,7 @@ footer hr {
 /* Responsiveness for smaller devices */
 @media (max-width: 991px) {
     header {
-        padding: 5%;
+        padding: 10%;
     }
 
     header > div#logo-box > img {
@@ -451,11 +451,9 @@ footer hr {
     }
 
     main > section#section-menu > h2 {
-        top: -2.6%;
-        left: 5%;
+        top: -30px;
 
-        font-size: 8vw;
-        font-weight: 200;
+        font-size: 2.6em;
     }
 
     main > section#section-menu > div.menu-box {
@@ -548,20 +546,20 @@ footer hr {
 
     main > section#section-informations > div#contact-box > ul#social-media-ul > li#instagram-logo > a > img {
         background-image: linear-gradient(145deg, #F58529, #FEDA77, #DD2A7B, #8134AF , #515BD4);
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
-    main > section#section-informations > div#contact-box > ul > li#facebook-logo > a > img {
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#facebook-logo > a > img {
         background-color: #1877F2;
-        border-radius: 50%;
+        border-radius: 5px;
     }
 
-    main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a > img {
-        background: radial-gradient(circle, #fff 30%, #000);
-        border-radius: 15px;
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#tiktok-logo > a > img {
+        background: radial-gradient(circle, #fff 20%, #000);
+        border-radius: 25%;
     }
 
-    main > section#section-informations > div#contact-box > ul > li#instagram-logo > a::after {
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#instagram-logo > a::after {
         content: "Instagram";
         font-size: 4vw;
 
@@ -571,7 +569,7 @@ footer hr {
         transform: translate(-50%, 0);
     }
 
-    main > section#section-informations > div#contact-box > ul > li#facebook-logo > a::after {
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#facebook-logo > a::after {
         content: "Facebook";
         font-size: 4vw;
 
@@ -581,7 +579,7 @@ footer hr {
         transform: translate(-50%, 0);
     }
 
-    main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a::after {
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#tiktok-logo > a::after {
         content: "TikTok";
         font-size: 4vw;
 
@@ -589,6 +587,18 @@ footer hr {
         top: 100%;
         left: 50%;
         transform: translate(-50%, 0);
+    }
+
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#instagram-logo > a:hover::after {
+        font-size: 4vw;
+    }
+
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#facebook-logo > a:hover::after {
+        font-size: 4vw;
+    }
+    
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#tiktok-logo > a:hover::after {
+        font-size: 4vw;
     }
 
     main > section#section-informations > div#localitation-box > fieldset {
