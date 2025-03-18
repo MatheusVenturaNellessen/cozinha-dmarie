@@ -80,8 +80,8 @@ main > section.sections > div.default-box {
     background-color: #fff;
     
     height: auto;
-    min-width: 400px;
-    max-width: 600px;
+    min-width: 500px;
+    max-width: 700px;
     
     border: 5px solid var(--dourado);
     border-radius: 24px;
@@ -168,7 +168,7 @@ main > section#section-menu > div.menu-box {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 
     height: auto;
-    max-width: 600px;
+    width: 600px;
 
     padding: 30px;
 }
@@ -203,10 +203,6 @@ main > section#section-menu > div.menu-box > div.price-box {
     background-color: var(--verde-jade);
     border-radius: 15px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
-}
-            
-main > section#section-about{
-    align-items: center;
 }
 
 main > section#section-about > div#about-image-box {
@@ -248,10 +244,16 @@ main > section#section-informations > div#contact-box > ul > li > a {
 }
 
 main > section#section-informations > div#contact-box > ul > li > a > img {
-    height: 60px;
+    height: 5vw;
+    max-height: 80px;
     width: auto;
+}
 
-    align-items: center;
+main > section#section-informations > div#contact-box > ul#social-media-ul {
+    display: inline-flex;
+    gap: 20%;
+    width: 100%;
+    justify-content: center;
 }
 
 main > section#section-informations > div#contact-box > ul > li#instagram-logo > a > img:hover {
@@ -259,11 +261,18 @@ main > section#section-informations > div#contact-box > ul > li#instagram-logo >
     border-radius: 10px;
 }
 
+main > section#section-informations > div#contact-box > ul > li#instagram-logo {
+    position: relative;
+}
+
 main > section#section-informations > div#contact-box > ul > li#instagram-logo > a:hover::after {
-    content: "\AInstagram";
-    white-space: pre;
-    font-size: 0.8em;
-    font-weight: 450;
+    content: "Instagram";
+    font-size: 1em;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 main > section#section-informations > div#contact-box > ul > li#facebook-logo > a > img:hover {
@@ -271,11 +280,18 @@ main > section#section-informations > div#contact-box > ul > li#facebook-logo > 
     border-radius: 50%;
 }
 
+main > section#section-informations > div#contact-box > ul > li#facebook-logo {
+    position: relative;
+}
+
 main > section#section-informations > div#contact-box > ul > li#facebook-logo > a:hover::after {
-    content: "\A Facebook";
-    white-space: pre;
-    font-size: 0.8em;
-    font-weight: 450;
+    content: "Facebook";
+    font-size: 1em;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a > img:hover {
@@ -283,14 +299,34 @@ main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a 
     border-radius: 15px;
 }
 
-main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a:hover::after {
-    content: "\ATikTok";
-    white-space: pre;
-    font-size: 0.8em;
-    font-weight: 450;
+main > section#section-informations > div#contact-box > ul > li#tiktok-logo {
+    position: relative;
 }
 
-main > section#section-informations > div#localitation-box > iframe {
+main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a:hover::after {
+    content: "TikTok";
+    font-size: 1em;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+main > section#section-informations > div#localitation-box > fieldset {
+    border: 2px solid var(--verde-jade);
+    border-radius: 15px;
+}
+
+main > section#section-informations > div#localitation-box > fieldset > legend {
+    font-size: 1.25em;
+    font-weight: 500;
+    
+    margin-left: 5%;
+    padding: 0px 10px;
+}
+
+main > section#section-informations > div#localitation-box > fieldset > iframe {
     height: auto*2;
     width: 100%;
 
@@ -306,6 +342,8 @@ footer {
 
     background-color: var(--dourado);
     box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.300);
+    
+    padding: 30px;
 }
 
 footer > section#footer-section-flex {
@@ -324,8 +362,7 @@ footer > section > div > h2 {
     font-family: var(--default-title);
     font-size: 1.5em;
     font-weight: 600;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
-    
+
     margin: 20px 0px;
 }
 
@@ -333,7 +370,6 @@ footer > section > div > ul > li {
     list-style-type: none;
 
     font-size: 1.25em;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 
     margin: 15px 0px;
 }
@@ -361,7 +397,7 @@ footer hr {
     }
 
     header > div#logo-box > img {
-        height: 12vh;
+        height: 12vw;
         width: auto;
     }
         
@@ -372,47 +408,46 @@ footer hr {
     header > div#title-box > p {
         font-size: 3.5vw;
     }
+    
+    main {
+        padding: 0vh 3vw;
+    }
 
     main > section {
         display: block;
-        margin: 10vh 5vw;
     }
 
     main > section.sections > div.default-box {
-        min-width: 0px;
-        max-width: 100%;
+        min-width: 0;
         width: 100%;
         
         padding: 3vh 5vw;
-        margin: auto;
 
         border: 2px solid var(--dourado);
     }
 
     main > section.sections h2 {
-        font-size: 7vw;
+        font-size: 6vw;
         
         margin: 2vh 0vw;
     }
 
     main h3 {
-        font-size: 6vw;
-
-        margin: 2vh 0vw;
-    }
-
-    main > section.sections p {
         font-size: 5vw;
 
         margin: 2vh 0vw;
     }
 
-    
+    main > section.sections p {
+        font-size: 4vw;
+
+        margin: 2vh 0vw;
+    }
+
     main > section#section-menu {
         max-width: 600px;
         
-        margin: 5%;
-        margin-top: 10%;
+        margin: 10% auto 5% auto;
         padding: 5%;
     }
 
@@ -425,12 +460,12 @@ footer hr {
     }
 
     main > section#section-menu > div.menu-box {
-        min-width: none;
+        max-width: 100%;
         padding: 4%;
     }
 
     main > section#section-menu > div#menu-box-custom {
-        margin-top: 8%;
+        margin-top: 5vh;
     }
 
     main > section#section-menu > div.menu-box > p {
@@ -441,11 +476,11 @@ footer hr {
         font-size: 6vw;
 
         margin: 4vh 0vw;
-        padding: 2%;
+        padding: 3%;
     }
 
     main > section#section-about {
-        margin: 15% 5%;
+        margin: 15% 0%;
     }
 
     main > section#section-about > div#about-image-box {
@@ -454,6 +489,7 @@ footer hr {
 
     main > section#section-about > div#about-description-box {
         text-align: center;
+        margin: auto;
     }
 
     main > section#section-about > div#about-description-box > img {
@@ -469,12 +505,11 @@ footer hr {
     }
     
     main > section#section-informations {
-        margin: 5%;
-        margin-bottom: 15%;
+        margin: 5% 0% 15% 0%;
     }
 
     main > section#section-informations > div.informations-box {
-        margin-top: 5vh;
+        margin: 5vh auto 0vh auto;
     }
 
     main > section#section-informations > div#contact-box > ul > li {
@@ -498,14 +533,21 @@ footer hr {
         content: ": email@email.com";
     }
 
-    main > section#section-informations > div#contact-box > ul#social-media-lu {
+    main > section#section-informations > div#contact-box > ul#social-media-ul {
         display: inline-flex;
-        gap: 10%;
+        gap: 13vw;
         width: 100%;
         justify-content: center;
+        margin-bottom: 6vh;
     }
 
-    main > section#section-informations > div#contact-box > ul > li#instagram-logo > a > img {
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li > a > img {
+        height: auto;
+        width: 12vw;
+        max-width: 70px;
+    }
+
+    main > section#section-informations > div#contact-box > ul#social-media-ul > li#instagram-logo > a > img {
         background-image: linear-gradient(145deg, #F58529, #FEDA77, #DD2A7B, #8134AF , #515BD4);
         border-radius: 10px;
     }
@@ -520,25 +562,45 @@ footer hr {
         border-radius: 15px;
     }
 
-    main > section#section-informations > div#contact-box > ul > li#instagram-logo > a:hover::after {
-        content: none;
+    main > section#section-informations > div#contact-box > ul > li#instagram-logo > a::after {
+        content: "Instagram";
+        font-size: 4vw;
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
-    main > section#section-informations > div#contact-box > ul > li#facebook-logo > a:hover::after {
-        content: none;
+    main > section#section-informations > div#contact-box > ul > li#facebook-logo > a::after {
+        content: "Facebook";
+        font-size: 4vw;
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
-    main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a:hover::after {
-        content: none;
+    main > section#section-informations > div#contact-box > ul > li#tiktok-logo > a::after {
+        content: "TikTok";
+        font-size: 4vw;
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
     main > section#section-informations > div#localitation-box > iframe {
-        max-height: auto;
-        max-width: 100%;
+        max-height: 50vh;
+        max-width: auto;
     }
     
     footer {
         display: block;
+
+        padding: 0;
     }
 
     footer > section#footer-section-flex {
@@ -550,11 +612,12 @@ footer hr {
     }
 
     footer > section#footer-section-block > div > ul > li {
-        display: inline;
-        
-        font-size: 2.5vw;
+        font-size: 2.6vw;
 
-        padding: 0 1%;
+        text-align: center;
+
+        margin: 0;
+        padding-bottom: 2%;
     }
 
     footer > section > div > h2 {
