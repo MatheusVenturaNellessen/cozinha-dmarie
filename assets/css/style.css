@@ -330,7 +330,6 @@ main > section#section-informations > div#localitation-box > fieldset > iframe {
     height: auto*2;
     width: 100%;
 
-    border: 3px solid var(--verde-jade); /* Not working */
     border-radius: 15px;
 }
 
@@ -620,7 +619,7 @@ footer hr {
     }
 
     footer > section#footer-section-block > div > ul > li {
-        font-size: 2.8vw;
+        font-size: 2.6vw;
 
         text-align: center;
 
