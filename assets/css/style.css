@@ -145,13 +145,13 @@ main > section#section-menu {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
     
     height: auto;
-    max-width: 800px;
+    max-width: 90%;
 
     margin: 150px auto;
     padding: 40px;
 }
 
-main > section#section-menu > h2 {
+main > section.business > h2 {
     position: absolute;
     top: -35px;
     left: 4%;
@@ -162,7 +162,7 @@ main > section#section-menu > h2 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 }
 
-main > section#section-menu > div.menu-box {
+main > section.business > div {
     background-color: var(--off-white);
     border-radius: 24px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
@@ -181,14 +181,14 @@ main > section#section-menu > div.menu-box > img {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 }
 
-main > section#section-menu > div.menu-box > p {
+main > section.business > div > p {
     font-family: var(--default-font);
     font-size: 1em;
     line-height: 1.25em;
     text-align: justify;
 }
 
-main > section#section-menu > div.menu-box > div.price-box {
+main > section#section-menu > div.menu-box > button.price-box {
     font-family: var(--money-font);
     font-size: 2em;
     color: #fff;
@@ -201,8 +201,62 @@ main > section#section-menu > div.menu-box > div.price-box {
     padding: 10px;
     
     background-color: var(--verde-jade);
+    border: none;
     border-radius: 15px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+}
+
+main > section#section-menu > div.menu-box > button.price-box:hover {
+    background-color: #3fc19a;
+    cursor: pointer;
+}
+
+main > section#section-bag {
+    display: block;
+    position: relative;
+
+    background-color: #fff;
+    border-radius: 24px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+    
+    height: auto;
+    max-width: 35%;
+
+    margin: 150px auto;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+ main > section#section-bag > ul > li {
+    list-style-type: none;
+
+    background-color: var(--off-white);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+
+    height: auto;
+    max-width: 400px;
+
+    padding: 30px;
+
+    font-size: 1.5em;
+    text-align: center;
+    
+    margin: auto;
+    padding: 20px;
+}
+
+main > section#section-bag > ul > li > span {
+    font-family: var(--money-font);
+}
+
+main > section#section-bag > p {
+    font-size: 1.5em;
+
+    padding: 40px 30px;
+}
+
+main > section#section-bag > p > em > span {
+    font-family: var(--money-font);
 }
 
 main > section#section-about > div#about-image-box {
@@ -444,7 +498,7 @@ footer hr {
     }
 
     main > section#section-menu {
-        max-width: 600px;
+        max-width: 100%;
         
         margin: 10% auto 5% auto;
         padding: 5%;
@@ -462,7 +516,7 @@ footer hr {
     }
 
     main > section#section-menu > div#menu-box-custom {
-        margin-top: 5vh;
+        margin-top: 5vh; /* Not working */
     }
 
     main > section#section-menu > div.menu-box > p {
@@ -475,6 +529,41 @@ footer hr {
         margin: 4vh 0vw;
         padding: 3%;
     }
+
+    main > section#section-bag {
+        height: auto;
+        max-width: 100%;
+    
+        margin: 10vh auto;
+        padding: 5%;
+    }
+
+    main > section#section-bag > h2 {
+        top: -30px;
+
+        font-size: 2.6em;
+    }
+    
+     main > section#section-bag > ul > li {    
+        height: auto;
+        max-width: 100%;
+    
+        font-size: 4vw;
+        
+        margin: auto;
+        padding: 2%;
+    }
+    
+    main > section#section-bag > p {
+        font-size: 4vw;
+    
+        padding: 3vh 0vw 0vh 0vw;
+    }
+    
+    main > section#section-bag > p > em > span {
+        font-family: var(--money-font);
+    }
+    
 
     main > section#section-about {
         margin: 15% 0%;

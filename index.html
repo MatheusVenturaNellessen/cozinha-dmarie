@@ -18,20 +18,31 @@
         </div>
     </header>
     <main>
-        <section id="section-menu">
+        <section class="business" id="section-menu">
             <h2>Cardápio</h2>
-            <div class="menu-box">
+            <div class="menu-box" id="yakisoba-meal">
                 <img src="./assets/img/yakisoba-meal.jpg" alt="Imagem de um yakisoba">
-                <h3>Yakisoba</h3>
+                <h3 id="yakisoba-id">Yakisoba</h3>
                 <p>O <strong>Yakisoba</strong> é um prato de origem chinesa, elaborado com macarrão frito em uma <em><abbr title="Panela funda e arredondada ideal para saltear os ingredientes de maneira uniforme.">wok</abbr></em> combinado legumes frescos, carnes e um molho saboroso à base de <em><abbr title="Molho de soja.">shoyu</abbr></em>.</p>
-                <div class="price-box">R$ 88,88</div>
+                <button class="price-box" id="yakisoba-price">R$ 88,88</button>
             </div>
-            <div class="menu-box" id="menu-box-custom">
+            <div class="menu-box" id="menu-box-custom karague-meal">
                 <img src="./assets/img/karague-meal.jpg" alt="Imagem de um frango karague">
-                <h3>Frango Karague</h3>
+                <h3 id="karague-id">Frango Karague</h3>
                 <p>O <strong>Frango Karague</strong> é um prato japonês de origem chinesa, feito com pedaços de frango marinados em <em><abbr title="Molho de soja.">shoyu</abbr></em>, gengibre e alho, depois empanados e fritos até ficarem dourados e crocantes.</p>
-                <div class="price-box">R$ 88,88</div>
+                <button class="price-box" id="karague-price">R$ 88,88</button>
             </div>
+            <div class="menu-box" id="menu-box-custom executive-meal">
+                <img src="./assets/img/executive-meal.jpeg" alt="Imagem de um frango karague">
+                <h3 id="executive-id">Executivo chinês</h3>
+                <p>O prato executivo chinês combina três clássicos irresistíveis: <em><abbr title="Arroz frito temperado com legumes e ovo.">Yakimeshi</abbr></em>; Frango Karague; e Yakisoba. Uma refeição equilibrada e cheia de sabor.</p>
+                <button class="price-box" id="executive-price">R$ 88,88</button>
+            </div>
+        </section>
+        <section class="business" id="section-bag">
+            <h2>Meus pedidos</h2>
+                <ul class="display-bag"></ul>
+            <p><em>Total: R$ <span class="counter-bag">00,00</span></em></p>
         </section>
         <hr>
         <section class="sections" id="section-about">
@@ -105,5 +116,7 @@
             </div>
         </section>
     </footer>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
