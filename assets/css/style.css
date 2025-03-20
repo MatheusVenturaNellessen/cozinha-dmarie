@@ -228,7 +228,7 @@ main > section#section-bag {
     height: auto;
     max-width: 90%;
 
-    margin: 150px auto;
+    margin: 5vh auto;
     padding: 40px;
 }
 
@@ -285,21 +285,47 @@ main > section#section-bag > button:active {
     color: #000;
 }
 
-main > section#section-bag > ul > li > button {
-    background-color: var(--vermelho);
+main > section#section-bag > ul > li > button.to-add-button, button.to-decrease-button {
+    background-color: var(--bege-suave);
 
-    margin: 0px 10px;
-    padding: 8px;
+    font-size: 0.6em;
+
+    margin-left: 10px;
+    padding: 10px;
 
     border: none;
     border-radius: 50%;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 }
 
-main > section#section-bag > ul > li > button > img {
-    height: 30px;
-    width: auto;
-    cursor: pointer;
+main > section#section-bag > ul > li > button.to-add-button:hover, button.to-decrease-button:hover {
+    background-color: var(--off-white);
+}
+
+main > section#section-bag > ul > li > button.to-add-button:active, button.to-decrease-button:active {
+    background-color: var(--dourado);
+}
+
+main > section#section-bag > ul > li > button.delete-button {
+    background-color: var(--bege-suave);
+
+    font-size: 0.6em;
+    color: var(--bege-suave);
+
+    margin-left: 10px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+}
+
+main > section#section-bag > ul > li > button.delete-button:hover {
+    background-color: var(--off-white);
+}
+
+main > section#section-bag > ul > li > button.delete-button:active {
+    background-color: var(--dourado);
 }
 
 main > section#section-about > div#about-image-box {
@@ -590,7 +616,7 @@ footer hr {
     }
     
      main > section#section-bag > ul > li {    
-        font-size: 4vw;
+        font-size: 3.5vw;
 
         padding: 2vh 0vw;
     }
@@ -617,9 +643,25 @@ footer hr {
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
     }
     
-    main > section#section-bag > ul > li > button > img {
-        height: 4vw;
-        width: auto;
+    main > section#section-bag > ul > li > button.to-add-button {
+        font-size: 2vw;
+
+        margin: 1vw;
+        padding: 1.5%;
+    }
+
+    main > section#section-bag > ul > li > button.to-decrease-button {
+        font-size: 2vw;
+
+        margin: 1vw;
+        padding: 1.5%;
+    }
+    
+    main > section#section-bag > ul > li > button.delete-button {
+        font-size: 2vw;
+
+        margin: 1vw;
+        padding: 1.5%;
     }
 
     main > section#section-about {
