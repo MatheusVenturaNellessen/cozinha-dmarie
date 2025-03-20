@@ -18,34 +18,35 @@
         </div>
     </header>
     <main>
-        <section class="business" id="section-menu">
+        <section id="section-menu">
             <h2>Cardápio</h2>
             <div class="menu-box" id="yakisoba-meal">
                 <img src="./assets/img/yakisoba-meal.jpg" alt="Imagem de um yakisoba">
                 <h3 id="yakisoba-id">Yakisoba</h3>
                 <p>O <strong>Yakisoba</strong> é um prato de origem chinesa, elaborado com macarrão frito em uma <em><abbr title="Panela funda e arredondada ideal para saltear os ingredientes de maneira uniforme.">wok</abbr></em> combinado legumes frescos, carnes e um molho saboroso à base de <em><abbr title="Molho de soja.">shoyu</abbr></em>.</p>
-                <button class="price-box" id="yakisoba-price">R$ 88,88</button>
+                <button class="add-bag-box" id="yakisoba-add-bag">R$ 59,90</button>
             </div>
-            <div class="menu-box" id="menu-box-custom karague-meal">
+            <div class="menu-box custom-box-for-small-device" id="karague-meal">
                 <img src="./assets/img/karague-meal.jpg" alt="Imagem de um frango karague">
                 <h3 id="karague-id">Frango Karague</h3>
                 <p>O <strong>Frango Karague</strong> é um prato japonês de origem chinesa, feito com pedaços de frango marinados em <em><abbr title="Molho de soja.">shoyu</abbr></em>, gengibre e alho, depois empanados e fritos até ficarem dourados e crocantes.</p>
-                <button class="price-box" id="karague-price">R$ 88,88</button>
+                <button class="add-bag-box" id="karague-add-bag">R$ 39,90</button>
             </div>
-            <div class="menu-box" id="menu-box-custom executive-meal">
-                <img src="./assets/img/executive-meal.jpeg" alt="Imagem de um frango karague">
+            <div class="menu-box custom-box-for-small-device" id="executive-meal">
+                <img src="./assets/img/executive-meal.jpg" alt="Imagem de um frango karague">
                 <h3 id="executive-id">Executivo chinês</h3>
-                <p>O prato executivo chinês combina três clássicos irresistíveis: <em><abbr title="Arroz frito temperado com legumes e ovo.">Yakimeshi</abbr></em>; Frango Karague; e Yakisoba. Uma refeição equilibrada e cheia de sabor.</p>
-                <button class="price-box" id="executive-price">R$ 88,88</button>
+                <p>O <strong>Prato Executivo</strong> chinês combina três clássicos irresistíveis: <em><abbr title="Arroz frito temperado com legumes e ovo.">Yakimeshi</abbr></em>; <em><abbr title="Frango frito marinado em shoyu, gengibre e alho.">Frango Karague</abbr></em>; e <abbr title="Macarrão frito temperado com legumes e carnes ou frutos do mar.">Yakisoba</abbr>. Uma refeição equilibrada e cheia de sabor.</p>
+                <button class="add-bag-box" id="executive-add-bag">R$ 49,90</button>
             </div>
-        </section>
-        <section class="business" id="section-bag">
-            <h2>Meus pedidos</h2>
-                <ul class="display-bag"></ul>
-            <p><em>Total: R$ <span class="counter-bag">00,00</span></em></p>
         </section>
         <hr>
-        <section class="sections" id="section-about">
+        <section id="section-bag">
+            <h2>Meus pedidos</h2>
+                <ul class="display-bag"></ul>
+            <p><em>Total: R$ <span class="adder-price">00,00</span></em></p>
+        </section>
+        <hr>
+        <section class="default-sections" id="section-about">
             <div id="about-image-box">
                 <img src="./assets/img/dona-hiroe-for-large-device.png" alt="Imagem de Dona Hiroe Tajiri, cozinha e fundadora da Cozinha D'Marie">
             </div>
@@ -57,7 +58,7 @@
             </div>
         </section>
         <hr>
-        <section class="sections" id="section-informations">
+        <section class="default-sections" id="section-informations">
             <div class="default-box informations-box" id="contact-box">
                 <h2>Conecte-se conosco!</h2>
                 <p>Ligue para o nosso telefone ou mande uma mensagem para realizar seu pedido. Você também pode enviar um e-mail para esclarecer suas dúvidas e não deixe de nos <strong>seguir em nossas redes sociais</strong> para acompanhar nossa jornada!</p>

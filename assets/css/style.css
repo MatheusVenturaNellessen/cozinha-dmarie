@@ -64,39 +64,7 @@ html, body {
     background-position: right top;
     background-size: contain;
     background-attachment: fixed;
-
-}
-
-main > section {
-    display: flex;
-    gap: 60px;
-    justify-content: center;
-    align-items: flex-start;
-
-    margin: 150px;
-}
-
-main > section.sections > div.default-box {
-    background-color: #fff;
     
-    height: auto;
-    min-width: 500px;
-    max-width: 700px;
-    
-    border: 5px solid var(--dourado);
-    border-radius: 24px;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.400);
-    
-    padding: 35px;
-}
-
-main > section.sections h2 {
-    font-family: var(--default-title);
-    font-size: 2em;
-    font-weight: 600;
-    text-align: center;
-    
-    margin: 10px 0px;
 }
 
 main h3 {
@@ -105,15 +73,6 @@ main h3 {
     font-weight: 600;
 
     margin: 25px 0px;
-}
-
-main > section.sections p {
-    font-family: var(--default-font);
-    font-size: 1.5em;
-    line-height: 1.5em;
-    text-align: justify;
-
-    margin: 20px 0px;
 }
 
 main hr {
@@ -137,6 +96,47 @@ main em, abbr {
     font-weight: 450;
 }
 
+main > section {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 150px;
+}
+
+main > section.default-sections > div.default-box {
+    background-color: #fff;
+    
+    height: auto;
+    min-width: 500px;
+    max-width: 700px;
+    
+    border: 5px solid var(--dourado);
+    border-radius: 24px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.400);
+    
+    padding: 35px;
+}
+
+main > section.default-sections h2 {
+    font-family: var(--default-title);
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    
+    margin: 10px 0px;
+}
+
+main > section.default-sections p {
+    font-family: var(--default-font);
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-align: justify;
+
+    margin: 20px 0px;
+}
+
 main > section#section-menu {
     position: relative;
 
@@ -151,7 +151,7 @@ main > section#section-menu {
     padding: 40px;
 }
 
-main > section.business > h2 {
+main > section#section-menu > h2 {
     position: absolute;
     top: -35px;
     left: 4%;
@@ -162,13 +162,14 @@ main > section.business > h2 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 }
 
-main > section.business > div {
+main > section#section-menu > div.menu-box {
     background-color: var(--off-white);
     border-radius: 24px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 
     height: auto;
-    width: 600px;
+    width: 100%;
+    max-width: 500px;
 
     padding: 30px;
 }
@@ -181,14 +182,14 @@ main > section#section-menu > div.menu-box > img {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 }
 
-main > section.business > div > p {
+main > section#section-menu > div.menu-box > p {
     font-family: var(--default-font);
     font-size: 1em;
     line-height: 1.25em;
     text-align: justify;
 }
 
-main > section#section-menu > div.menu-box > button.price-box {
+main > section#section-menu > div.menu-box > button.add-bag-box {
     font-family: var(--money-font);
     font-size: 2em;
     color: #fff;
@@ -206,11 +207,16 @@ main > section#section-menu > div.menu-box > button.price-box {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
 }
 
-main > section#section-menu > div.menu-box > button.price-box:hover {
+main > section#section-menu > div.menu-box > button.add-bag-box:hover {
     background-color: #3fc19a;
     cursor: pointer;
 }
 
+main > section#section-menu > div.menu-box > button.add-bag-box:active {
+    background-color: var(--dourado);
+    color: #000;
+}
+ 
 main > section#section-bag {
     display: block;
     position: relative;
@@ -220,43 +226,80 @@ main > section#section-bag {
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
     
     height: auto;
-    max-width: 35%;
+    max-width: 90%;
 
     margin: 150px auto;
     padding: 40px;
-    padding-bottom: 0;
 }
 
- main > section#section-bag > ul > li {
+main > section#section-bag > h2 {
+    position: absolute;
+    top: -35px;
+    left: 4%;
+
+    font-family: var(--default-title);
+    font-size: 3em;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+}
+
+main > section#section-bag > ul > li {
     list-style-type: none;
 
-    background-color: var(--off-white);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
-
-    height: auto;
-    max-width: 400px;
-
-    padding: 30px;
-
-    font-size: 1.5em;
-    text-align: center;
+    font-size: 1.8em;
     
-    margin: auto;
-    padding: 20px;
-}
-
-main > section#section-bag > ul > li > span {
-    font-family: var(--money-font);
+    padding-bottom: 20px;
 }
 
 main > section#section-bag > p {
-    font-size: 1.5em;
-
-    padding: 40px 30px;
+    display: inline;
+    
+    font-size: 1.8em;
 }
 
-main > section#section-bag > p > em > span {
-    font-family: var(--money-font);
+main > section#section-bag > button {
+    background-color: var(--verde-jade);
+    
+    height: auto;
+    width: auto;
+
+    margin: 20px;
+    padding: 12px;
+
+    font-size: 1.5em;
+    color: #fff;
+
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+
+}
+
+main > section#section-bag > button:hover {
+    background-color: #3fc19a;
+    cursor: pointer;
+}
+
+main > section#section-bag > button:active {
+    background-color: var(--dourado);
+    color: #000;
+}
+
+main > section#section-bag > ul > li > button {
+    background-color: var(--vermelho);
+
+    margin: 0px 10px;
+    padding: 8px;
+
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
+}
+
+main > section#section-bag > ul > li > button > img {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
 }
 
 main > section#section-about > div#about-image-box {
@@ -470,7 +513,7 @@ footer hr {
         display: block;
     }
 
-    main > section.sections > div.default-box {
+    main > section.default-sections > div.default-box {
         min-width: 0;
         width: 100%;
         
@@ -479,7 +522,7 @@ footer hr {
         border: 2px solid var(--dourado);
     }
 
-    main > section.sections h2 {
+    main > section.default-sections h2 {
         font-size: 6vw;
         
         margin: 2vh 0vw;
@@ -491,14 +534,15 @@ footer hr {
         margin: 2vh 0vw;
     }
 
-    main > section.sections p {
+    main > section.default-sections p {
         font-size: 4vw;
 
         margin: 2vh 0vw;
     }
 
     main > section#section-menu {
-        max-width: 100%;
+        width: 100%;
+        max-width: 700px;
         
         margin: 10% auto 5% auto;
         padding: 5%;
@@ -511,12 +555,13 @@ footer hr {
     }
 
     main > section#section-menu > div.menu-box {
+        width: 100%;
         max-width: 100%;
         padding: 4%;
     }
 
-    main > section#section-menu > div#menu-box-custom {
-        margin-top: 5vh; /* Not working */
+    main > section#section-menu > div.custom-box-for-small-device {
+        margin-top: 5vh;
     }
 
     main > section#section-menu > div.menu-box > p {
@@ -532,10 +577,10 @@ footer hr {
 
     main > section#section-bag {
         height: auto;
-        max-width: 100%;
+        width: 100%;
+        max-width: 700px;
     
-        margin: 10vh auto;
-        padding: 5%;
+        padding: 4%;
     }
 
     main > section#section-bag > h2 {
@@ -545,25 +590,37 @@ footer hr {
     }
     
      main > section#section-bag > ul > li {    
-        height: auto;
-        max-width: 100%;
-    
         font-size: 4vw;
-        
-        margin: auto;
-        padding: 2%;
+
+        padding: 2vh 0vw;
     }
     
     main > section#section-bag > p {
         font-size: 4vw;
+    }
+
+    main > section#section-bag > button {
+        margin: 20px;
+        padding: 3%;
     
-        padding: 3vh 0vw 0vh 0vw;
+        font-size: 3.3vw;
+
+        margin: 3%;
     }
     
-    main > section#section-bag > p > em > span {
-        font-family: var(--money-font);
+    main > section#section-bag > ul > li > button { 
+        margin: 0vh 2vw;
+        padding: 2%;
+    
+        border: none;
+        border-radius: 50%;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.300);
     }
     
+    main > section#section-bag > ul > li > button > img {
+        height: 4vw;
+        width: auto;
+    }
 
     main > section#section-about {
         margin: 15% 0%;
