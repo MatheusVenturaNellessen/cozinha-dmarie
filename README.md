@@ -1,7 +1,6 @@
-
 <h1>Cozinha D'Marie</h1>
 
-<p>Esse projeto teve como objetivo desenvolver um site de um restaurante chinês afim de praticar as seguintes linguagens.</p>
+<p>Esse projeto teve como objetivo desenvolver um site de um restaurante chinês fim de praticar as seguintes linguagens.</p>
 
 <h2>Tecnologias utilizadas</h2>
 
@@ -15,9 +14,12 @@
 <h2>Funcionalidades</h2>
 
 <ul>
-  <li>Adicionar item a sacola de compras</li>
-  <li>Visualizar itens da sacola com seu respctivos valores</li>
-  <li>Visualizar itens da sacola com seu respctivos valores e valor total da sacola (soma dos valores dos itens)</li>
+  <li>Responsividade para dispositivos pequenos (celulares e tablets) e dispositivos maiores (laoptop e computadores).</li>
+  <li>Adicionar item a sacola de compras.</li>
+  <li>Visualizar itens da sacola em suas quantidades e com seu respctivos valores.</li>
+  <li>Deletar item(s).</li>
+  <li>Visualizar valor total da sacola.</li>
+  <li>Simular compras ao clicar no botão "Ir para o pagamanto".</li>
 </ul>
 
 <h2>Como rodar o porjeto</h2>
@@ -38,9 +40,11 @@
 	<li>Por fim, abra o arquivo index.html em algum navegador.</li>
 </ol>
 
-<h2>Como Funciona a soma dos valores dos itens?</h2>
+<h2>Licenciamento de imagens</h2>
 
-<p>A soma ocorre na função denominada <strong>bagPrice</strong>, onde a mesma recebe os valores dos itens por parâmetro, na função há uma variável que somas cada entrada de valor e por fim é retorna.</p>
+<p>As imagens utilizadas neste projeto são de terceiros e possuem direitos autorais protegidos. Elas foram utilizadas exclusivamente para fins pedagógicos e não têm finalidade comercial. Todos os créditos e direitos autorais pertencem aos seus respectivos proprietários.</p>
+
+<p>Caso alguma das imagens deva ser removida ou creditada de maneira específica, por favor, entre em contato.</p>
 
 <h2>Contribuições</h2>
 
