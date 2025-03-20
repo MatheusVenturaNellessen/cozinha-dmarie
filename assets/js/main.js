@@ -73,7 +73,7 @@ function createLiForExecutive() {
 
 function createImg() {
     const img = document.createElement('img');
-    img.src = '/assets/img/trash-icon.png';
+    img.src = '../img/trash-icon.png';
     img.alt = 'ícone de um lixo';
 
     return img;
