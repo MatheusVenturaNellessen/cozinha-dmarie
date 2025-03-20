@@ -16,7 +16,9 @@
 <ul>
   <li>Responsividade para dispositivos pequenos (celulares e tablets) e dispositivos maiores (laoptop e computadores).</li>
   <li>Adicionar item a sacola de compras.</li>
-  <li>Visualizar itens da sacola em suas quantidades e com seu respctivos valores.</li>
+  <li>Visualizar itens da sacola e suas rescpetivas quantidades e valores (valor unitários * quantidade).</li>
+  <li>Incrementar e/ou decrementar a quantidade dos itens.</li>
+  <li>Cálculo automático do valor dos itens e da sacola de compras.</li>
   <li>Deletar item(s).</li>
   <li>Visualizar valor total da sacola.</li>
   <li>Simular compras ao clicar no botão "Ir para o pagamanto".</li>
