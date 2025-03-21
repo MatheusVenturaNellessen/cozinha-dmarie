@@ -103,11 +103,10 @@ function displayYakisoba(id, price) {
     counterY++;
 
     const li = createLiForYakisoba(); 
-
-    const itemContent = `${id}: ${counterY}und. R$ ${(price*counterY).toFixed(2)}`;
-    li.textContent = itemContent; 
+    li.innerHTML = `${id}: ${counterY}und. R$ ${(price*counterY).toFixed(2)}`;
     
     const toAddButton = createToAddButton();
+    
     const deleteButton = createDeleteButton();
     const toDecreaseButton = createToDecreaseButton();
     
@@ -118,8 +117,13 @@ function displayYakisoba(id, price) {
     displayBag.appendChild(li);
     
     toAddButton.addEventListener('click', e => {
-        displayYakisoba(yakisobaId, yakisobaAddBag.innerHTML);
+        counterY++;
+        li.innerHTML = `${id}: ${counterY}und. R$ ${(price*counterY).toFixed(2)}`;
+        li.appendChild(toAddButton);
+        li.appendChild(deleteButton);
+        li.appendChild(toDecreaseButton);
         
+        bagPrice();
     });
     
     deleteButton.addEventListener('click', e => {
@@ -137,11 +141,15 @@ function displayYakisoba(id, price) {
     });
     
     toDecreaseButton.addEventListener('click', e => {
-        counterY--;
-        counterY--;
-        displayYakisoba(yakisobaId, yakisobaAddBag.innerHTML);
-        
-        if(counterY <= 0) toDecreaseButton.parentElement.remove(); /* Not working */
+        if(counterY > 1) {
+            counterY--;
+            li.innerHTML = `${id}: ${counterY}und. R$ ${(price*counterY).toFixed(2)}`;
+            li.appendChild(toAddButton);
+            li.appendChild(deleteButton);
+            li.appendChild(toDecreaseButton);
+
+            bagPrice();
+        }
     });
     
     bagPrice();
@@ -155,9 +163,7 @@ function displayKarague(id, price) {
     counterK++;
 
     const li = createLiForKarague(); 
-
-    const itemContent = `${id}: ${counterK}und. R$ ${(price*counterK).toFixed(2)}`;
-    li.textContent = itemContent; 
+    li.innerHTML = `${id}: ${counterK}und. R$ ${(price*counterK).toFixed(2)}`;
     
     const toAddButton = createToAddButton();
     const deleteButton = createDeleteButton();
@@ -170,8 +176,13 @@ function displayKarague(id, price) {
     displayBag.appendChild(li);
     
     toAddButton.addEventListener('click', e => {
-        displayKarague(karagueId, karagueAddBag.innerHTML);
-        
+        counterK++;
+        li.innerHTML = `${id}: ${counterK}und. R$ ${(price*counterK).toFixed(2)}`;
+        li.appendChild(toAddButton);
+        li.appendChild(deleteButton);
+        li.appendChild(toDecreaseButton);
+
+        bagPrice();
     });
     
     deleteButton.addEventListener('click', e => {
@@ -179,7 +190,7 @@ function displayKarague(id, price) {
             deleteButton.parentElement.remove();
         }
         
-        const purchaseButton = document.querySelectorAll('.purchase-button');
+        const purchaseButton = document.querySelector('.purchase-button');
         if (purchaseButton && !(document.querySelector('.meal-display'))) {
             purchaseButton.remove();
         }
@@ -189,12 +200,15 @@ function displayKarague(id, price) {
     });
     
     toDecreaseButton.addEventListener('click', e => {
-        counterK--;
-        counterK--;
-        displayKarague(karagueId, karagueAddBag.innerHTML);
-        
-        console.log(toDecreaseButton.parentElement);
-        if(counterK <= 0) toDecreaseButton.parentElement.remove();
+        if(counterK > 1) {
+            counterK--;
+            li.innerHTML = `${id}: ${counterK}und. R$ ${(price*counterK).toFixed(2)}`;
+            li.appendChild(toAddButton);
+            li.appendChild(deleteButton);
+            li.appendChild(toDecreaseButton);
+
+            bagPrice();
+        }
     });
     
     bagPrice();
@@ -208,10 +222,8 @@ function displayExecutive(id, price) {
     counterE++;
 
     const li = createLiForExecutive(); 
-
-    const itemContent = `${id}: ${counterE}und. R$ ${(price*counterE).toFixed(2)}`;
-    li.textContent = itemContent; 
-    
+    li.innerHTML = `${id}: ${counterE}und. R$ ${(price*counterE).toFixed(2)}`;
+ 
     const toAddButton = createToAddButton();
     const deleteButton = createDeleteButton();
     const toDecreaseButton = createToDecreaseButton();
@@ -223,8 +235,13 @@ function displayExecutive(id, price) {
     displayBag.appendChild(li);
     
     toAddButton.addEventListener('click', e => {
-        displayExecutive(executiveId, executiveAddBag.innerHTML);
+        counterE++;
+        li.innerHTML = `${id}: ${counterE}und. R$ ${(price*counterE).toFixed(2)}`;
+        li.appendChild(toAddButton);
+        li.appendChild(deleteButton);
+        li.appendChild(toDecreaseButton);
         
+        bagPrice()       
     });
     
     deleteButton.addEventListener('click', e => {
@@ -242,18 +259,22 @@ function displayExecutive(id, price) {
     });
     
     toDecreaseButton.addEventListener('click', e => {
-        counterE--;
-        counterE--;
-        displayExecutive(executiveId, executiveAddBag.innerHTML);
-        
-        console.log(toDecreaseButton.parentElement);
-        if(counterE <= 0) toDecreaseButton.parentElement.remove();
+        if(counterE > 1) {
+            counterE--;
+            li.innerHTML = `${id}: ${counterE}und. R$ ${(price*counterE).toFixed(2)}`;
+            li.appendChild(toAddButton);
+            li.appendChild(deleteButton);
+            li.appendChild(toDecreaseButton);
+            
+            bagPrice();
+        }
     });
     
     bagPrice();
 }
 
 function bagPrice() {
+    console.log(counterY, counterK, counterE);
     const total = (counterY * converterInNumber(yakisobaAddBag.innerHTML)) + (counterK * converterInNumber(karagueAddBag.innerHTML)) + (counterE * converterInNumber(executiveAddBag.innerHTML));
 
     if(total > 0) {
