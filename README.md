@@ -1,4 +1,4 @@
-<h1>Cozinha D'Marie</h1>
+<h1>Panela de Bambu Website</h1>
 
 <p>Esse projeto teve como objetivo desenvolver um site de um restaurante chinês fim de praticar as seguintes linguagens.</p>
 

@@ -519,16 +519,16 @@ footer hr {
     }
 
     header > div#logo-box > img {
-        height: 12vw;
+        height: 15vw;
         width: auto;
     }
         
     header > div#title-box > h1 {
-        font-size: 7vw;
+        font-size: 8vw;
     }
     
     header > div#title-box > p {
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
     
     main {
@@ -616,7 +616,7 @@ footer hr {
     }
     
      main > section#section-bag > ul > li {    
-        font-size: 4vw;
+        font-size: 3.8vw;
 
         padding: 0.5vh 0vw;
     }
